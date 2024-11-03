@@ -1,0 +1,3 @@
+/home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/build/CMakeFiles/doggy.dir
+/home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/build/CMakeFiles/edit_cache.dir
+/home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/build/CMakeFiles/rebuild_cache.dir
