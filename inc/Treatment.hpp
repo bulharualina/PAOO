@@ -1,5 +1,4 @@
 #include <iostream>
-
 using namespace std;
 
 class Treatment {
@@ -27,4 +26,8 @@ public:
     void setName(const string &name);
     void setDayGiven(const string &dayGiven);
     void setFrequency(const string &frequency);
+
+    //Overloading the Assignment Operator
+    //f.operator=(g) <> f=g   f-lhs object g-rhs object
+    Treatment& operator=(const Treatment& rhs);
 };
