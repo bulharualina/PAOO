@@ -22,4 +22,9 @@ public:
     const char* getDayGiven() const;
     const char* getFrequency() const;
 
+    // Setters
+    void setDogName(const string &dogName);
+    void setName(const string &name);
+    void setDayGiven(const string &dayGiven);
+    void setFrequency(const string &frequency);
 };

@@ -26,7 +26,7 @@ Treatment::~Treatment() {
     cout << "Memory freed for Treatment object." << endl;
 }
 
-
+// Getters
 const char* Treatment::getDogName() const{
     return dogName;
 }
@@ -42,3 +42,29 @@ const char* Treatment::getDayGiven() const{
 const char* Treatment::getFrequency() const{
     return frequency;
 }
+
+// Setters
+void Treatment::setDogName(const string &dogName) {
+    delete[] this->dogName; 
+    this->dogName = new char[dogName.size() + 1];
+    strcpy(this->dogName, dogName.c_str());
+}
+
+void Treatment::setName(const string &treatmentName) {
+    delete[] this->treatmentName; 
+    this->treatmentName = new char[treatmentName.size() + 1];
+    strcpy(this->treatmentName, treatmentName.c_str());
+}
+
+void Treatment::setDayGiven(const string &dayGiven) {
+    delete[] this->dayGiven; 
+    this->dayGiven = new char[dayGiven.size() + 1];
+    strcpy(this->dayGiven, dayGiven.c_str());
+}
+
+void Treatment::setFrequency(const string &frequency) {
+    delete[] this->frequency; 
+    this->frequency = new char[frequency.size() + 1];
+    strcpy(this->frequency, frequency.c_str());
+}
+
