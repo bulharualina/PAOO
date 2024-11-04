@@ -1,7 +1,8 @@
-CMakeFiles/doggy.dir/src/main.cpp.o: \
- /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/main.cpp \
- /usr/include/stdc-predef.h /usr/include/c++/13/iostream \
- /usr/include/c++/13/bits/requires_hosted.h \
+CMakeFiles/doggy.dir/src/Treatment.cpp.o: \
+ /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/Treatment.cpp \
+ /usr/include/stdc-predef.h \
+ /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/inc/Treatment.hpp \
+ /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -149,5 +150,5 @@ CMakeFiles/doggy.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/locale_facets.tcc \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
- /usr/include/c++/13/bits/istream.tcc \
- /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/inc/Treatment.hpp
+ /usr/include/c++/13/bits/istream.tcc /usr/include/c++/13/cstring \
+ /usr/include/string.h /usr/include/strings.h

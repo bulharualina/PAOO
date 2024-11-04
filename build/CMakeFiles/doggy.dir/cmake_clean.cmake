@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/doggy.dir/src/Treatment.cpp.o"
+  "CMakeFiles/doggy.dir/src/Treatment.cpp.o.d"
   "CMakeFiles/doggy.dir/src/main.cpp.o"
   "CMakeFiles/doggy.dir/src/main.cpp.o.d"
   "doggy"

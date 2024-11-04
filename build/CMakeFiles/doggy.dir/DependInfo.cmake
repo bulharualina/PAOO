@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/Treatment.cpp" "CMakeFiles/doggy.dir/src/Treatment.cpp.o" "gcc" "CMakeFiles/doggy.dir/src/Treatment.cpp.o.d"
   "/home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/main.cpp" "CMakeFiles/doggy.dir/src/main.cpp.o" "gcc" "CMakeFiles/doggy.dir/src/main.cpp.o.d"
   )
 
