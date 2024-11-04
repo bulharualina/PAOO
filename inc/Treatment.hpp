@@ -8,12 +8,18 @@ private:
     char *dogName;
     char *treatmentName;
     char *dayGiven;
-    char *description;
+    char *frequency;
 
 public:
     //Constructor
-    Treatment(const string &dogName, const string &treatmentName, const string &dayGiven, const string &description);
+    Treatment(const string &dogName, const string &treatmentName, const string &dayGiven, const string &frequency);
     //Destructor
     ~Treatment();
+
+    // Getters const - sa nu modifice nimeni
+    const char* getDogName() const;
+    const char* getTreatmentName() const;
+    const char* getDayGiven() const;
+    const char* getFrequency() const;
 
 };
