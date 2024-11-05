@@ -129,6 +129,30 @@ doggy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/doggy.dir/build.make CMakeFiles/doggy.dir/build
 .PHONY : doggy/fast
 
+src/Dog.o: src/Dog.cpp.o
+.PHONY : src/Dog.o
+
+# target to build an object file
+src/Dog.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/doggy.dir/build.make CMakeFiles/doggy.dir/src/Dog.cpp.o
+.PHONY : src/Dog.cpp.o
+
+src/Dog.i: src/Dog.cpp.i
+.PHONY : src/Dog.i
+
+# target to preprocess a source file
+src/Dog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/doggy.dir/build.make CMakeFiles/doggy.dir/src/Dog.cpp.i
+.PHONY : src/Dog.cpp.i
+
+src/Dog.s: src/Dog.cpp.s
+.PHONY : src/Dog.s
+
+# target to generate assembly for a file
+src/Dog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/doggy.dir/build.make CMakeFiles/doggy.dir/src/Dog.cpp.s
+.PHONY : src/Dog.cpp.s
+
 src/Treatment.o: src/Treatment.cpp.o
 .PHONY : src/Treatment.o
 
@@ -186,6 +210,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... doggy"
+	@echo "... src/Dog.o"
+	@echo "... src/Dog.i"
+	@echo "... src/Dog.s"
 	@echo "... src/Treatment.o"
 	@echo "... src/Treatment.i"
 	@echo "... src/Treatment.s"

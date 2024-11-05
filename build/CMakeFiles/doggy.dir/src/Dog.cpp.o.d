@@ -1,5 +1,5 @@
-CMakeFiles/doggy.dir/src/main.cpp.o: \
- /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/main.cpp \
+CMakeFiles/doggy.dir/src/Dog.cpp.o: \
+ /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/Dog.cpp \
  /usr/include/stdc-predef.h \
  /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/inc/Dog.hpp \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
@@ -157,5 +157,4 @@ CMakeFiles/doggy.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/locale_facets.tcc \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
- /usr/include/c++/13/bits/istream.tcc \
- /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/inc/Treatment.hpp
+ /usr/include/c++/13/bits/istream.tcc

@@ -1,29 +1,45 @@
+#include "Dog.hpp"
+#include "Treatment.hpp"
 #include <iostream>
-#include "Treatment.hpp"  
 
 int main() {
-    Treatment treatment1("Buddy", 5, "Vaccination", 25.50, "2024-11-01", "Annual vaccination for rabies and distemper.");
-    Treatment treatment2("Bella", 4, "Flea Treatment", 30.00, "2024-11-03", "Applied topical flea treatment.");
+    // Create a Dog object with specified name, age, and weight
+    Dog dog1("Luna", 1, 24.5);
+    Dog dog2("Ava", 4, 30.0);
     
-    cout << "\nTreatment 1 Details:" << endl;
-    treatment1.printDetails();
+    // Create another Dog object using the default constructor
+    Dog defaultDog; 
 
+    // Create some Treatment objects with specified names and costs
+    Treatment t1("Vaccination", 75.0);
+    Treatment t2("Tick prevention treatment", 70.0);
+    Treatment t3("Deworming", 45.0);
+ 
 
-    cout << "\nTreatment 2 Details:" << endl;
-    treatment2.printDetails();
+    // Add treatments to the 'dog1' and 'dog2'
+    dog1.addTreatment(t2);  
+    dog2.addTreatment(t1);  
 
-    treatment2 = treatment1;
-    cout << "\nTreatment 2 Details after assignment from Treatment 1:" << endl;
-    treatment2.printDetails();
+    // Print details of dogs
+    cout << "Details dog1:" << endl;
+    dog1.printDetails();
     
-    treatment2.setDogName("Rocky");
-    treatment2.setTreatmentCost(20.00);
+    cout << "Details dog2:" << endl;
+    dog2.printDetails();
 
-    cout << "\nFinal Treatment Details:" << endl;
-    cout << "Treatment 1:" << endl;
-    treatment1.printDetails();
+    // Use the assignment operator to copy 'dog1' data into 'defaultDog'
+    cout << "Assignment operator (defaultDog = dog1):"<<endl;
+    defaultDog = dog1;
 
-    cout << "\nTreatment 2 (after modification):" << endl;
-    treatment2.printDetails();
+    // Change the name of 'defaultDog' to "Azor" after the assignment
+    defaultDog.setDogName("Azor");
+    
+    // Add treatments to the 'defaultDog' 
+    defaultDog.addTreatment(t3);
+
+    // Print details of 'defaultDog' 
+    cout <<"Default Dog after the assignment and changes:"<<endl;
+    defaultDog.printDetails();
+
     return 0;
 }

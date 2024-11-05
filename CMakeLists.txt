@@ -4,4 +4,4 @@ project(DogTreatment)
 
 include_directories(inc)
 
-add_executable(doggy src/main.cpp src/Treatment.cpp) 
+add_executable(doggy src/main.cpp src/Treatment.cpp src/Dog.cpp) 
