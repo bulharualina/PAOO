@@ -97,35 +97,67 @@ CMakeFiles/doggy.dir/src/Treatment.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/doggy.dir/src/Treatment.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/Treatment.cpp -o CMakeFiles/doggy.dir/src/Treatment.cpp.s
 
-CMakeFiles/doggy.dir/src/Dog.cpp.o: CMakeFiles/doggy.dir/flags.make
-CMakeFiles/doggy.dir/src/Dog.cpp.o: /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/Dog.cpp
-CMakeFiles/doggy.dir/src/Dog.cpp.o: CMakeFiles/doggy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/doggy.dir/src/Dog.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/doggy.dir/src/Dog.cpp.o -MF CMakeFiles/doggy.dir/src/Dog.cpp.o.d -o CMakeFiles/doggy.dir/src/Dog.cpp.o -c /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/Dog.cpp
+CMakeFiles/doggy.dir/src/Animals/Dog.cpp.o: CMakeFiles/doggy.dir/flags.make
+CMakeFiles/doggy.dir/src/Animals/Dog.cpp.o: /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/Animals/Dog.cpp
+CMakeFiles/doggy.dir/src/Animals/Dog.cpp.o: CMakeFiles/doggy.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/doggy.dir/src/Animals/Dog.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/doggy.dir/src/Animals/Dog.cpp.o -MF CMakeFiles/doggy.dir/src/Animals/Dog.cpp.o.d -o CMakeFiles/doggy.dir/src/Animals/Dog.cpp.o -c /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/Animals/Dog.cpp
 
-CMakeFiles/doggy.dir/src/Dog.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/doggy.dir/src/Dog.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/Dog.cpp > CMakeFiles/doggy.dir/src/Dog.cpp.i
+CMakeFiles/doggy.dir/src/Animals/Dog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/doggy.dir/src/Animals/Dog.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/Animals/Dog.cpp > CMakeFiles/doggy.dir/src/Animals/Dog.cpp.i
 
-CMakeFiles/doggy.dir/src/Dog.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/doggy.dir/src/Dog.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/Dog.cpp -o CMakeFiles/doggy.dir/src/Dog.cpp.s
+CMakeFiles/doggy.dir/src/Animals/Dog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/doggy.dir/src/Animals/Dog.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/Animals/Dog.cpp -o CMakeFiles/doggy.dir/src/Animals/Dog.cpp.s
+
+CMakeFiles/doggy.dir/src/Animals/Cat.cpp.o: CMakeFiles/doggy.dir/flags.make
+CMakeFiles/doggy.dir/src/Animals/Cat.cpp.o: /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/Animals/Cat.cpp
+CMakeFiles/doggy.dir/src/Animals/Cat.cpp.o: CMakeFiles/doggy.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/doggy.dir/src/Animals/Cat.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/doggy.dir/src/Animals/Cat.cpp.o -MF CMakeFiles/doggy.dir/src/Animals/Cat.cpp.o.d -o CMakeFiles/doggy.dir/src/Animals/Cat.cpp.o -c /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/Animals/Cat.cpp
+
+CMakeFiles/doggy.dir/src/Animals/Cat.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/doggy.dir/src/Animals/Cat.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/Animals/Cat.cpp > CMakeFiles/doggy.dir/src/Animals/Cat.cpp.i
+
+CMakeFiles/doggy.dir/src/Animals/Cat.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/doggy.dir/src/Animals/Cat.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/Animals/Cat.cpp -o CMakeFiles/doggy.dir/src/Animals/Cat.cpp.s
+
+CMakeFiles/doggy.dir/src/Animals/Animal.cpp.o: CMakeFiles/doggy.dir/flags.make
+CMakeFiles/doggy.dir/src/Animals/Animal.cpp.o: /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/Animals/Animal.cpp
+CMakeFiles/doggy.dir/src/Animals/Animal.cpp.o: CMakeFiles/doggy.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/doggy.dir/src/Animals/Animal.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/doggy.dir/src/Animals/Animal.cpp.o -MF CMakeFiles/doggy.dir/src/Animals/Animal.cpp.o.d -o CMakeFiles/doggy.dir/src/Animals/Animal.cpp.o -c /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/Animals/Animal.cpp
+
+CMakeFiles/doggy.dir/src/Animals/Animal.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/doggy.dir/src/Animals/Animal.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/Animals/Animal.cpp > CMakeFiles/doggy.dir/src/Animals/Animal.cpp.i
+
+CMakeFiles/doggy.dir/src/Animals/Animal.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/doggy.dir/src/Animals/Animal.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/Animals/Animal.cpp -o CMakeFiles/doggy.dir/src/Animals/Animal.cpp.s
 
 # Object files for target doggy
 doggy_OBJECTS = \
 "CMakeFiles/doggy.dir/src/main.cpp.o" \
 "CMakeFiles/doggy.dir/src/Treatment.cpp.o" \
-"CMakeFiles/doggy.dir/src/Dog.cpp.o"
+"CMakeFiles/doggy.dir/src/Animals/Dog.cpp.o" \
+"CMakeFiles/doggy.dir/src/Animals/Cat.cpp.o" \
+"CMakeFiles/doggy.dir/src/Animals/Animal.cpp.o"
 
 # External object files for target doggy
 doggy_EXTERNAL_OBJECTS =
 
 doggy: CMakeFiles/doggy.dir/src/main.cpp.o
 doggy: CMakeFiles/doggy.dir/src/Treatment.cpp.o
-doggy: CMakeFiles/doggy.dir/src/Dog.cpp.o
+doggy: CMakeFiles/doggy.dir/src/Animals/Dog.cpp.o
+doggy: CMakeFiles/doggy.dir/src/Animals/Cat.cpp.o
+doggy: CMakeFiles/doggy.dir/src/Animals/Animal.cpp.o
 doggy: CMakeFiles/doggy.dir/build.make
 doggy: CMakeFiles/doggy.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable doggy"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable doggy"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/doggy.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

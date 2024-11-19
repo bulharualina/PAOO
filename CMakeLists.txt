@@ -1,7 +1,14 @@
 cmake_minimum_required(VERSION 3.12)
 
-project(DogTreatment)
+project(AnimalsTreatment)
 
+include_directories(inc/Animals)
 include_directories(inc)
 
-add_executable(doggy src/main.cpp src/Treatment.cpp src/Dog.cpp) 
+
+add_executable(doggy
+    src/main.cpp
+    src/Treatment.cpp
+    src/Animals/Dog.cpp
+    src/Animals/Cat.cpp
+    src/Animals/Animal.cpp )

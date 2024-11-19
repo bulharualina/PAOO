@@ -1,7 +1,7 @@
-CMakeFiles/doggy.dir/src/main.cpp.o: \
- /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/main.cpp \
+CMakeFiles/doggy.dir/src/Animals/Cat.cpp.o: \
+ /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/Animals/Cat.cpp \
  /usr/include/stdc-predef.h \
- /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/inc/Animals/Dog.hpp \
+ /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/Animals/../../inc/Animals/Cat.hpp \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -120,7 +120,7 @@ CMakeFiles/doggy.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
- /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/inc/Animals/../Treatment.hpp \
+ /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/Animals/../../inc/Animals/../Treatment.hpp \
  /usr/include/c++/13/iostream /usr/include/c++/13/ostream \
  /usr/include/c++/13/ios /usr/include/c++/13/exception \
  /usr/include/c++/13/bits/exception_ptr.h \
@@ -158,6 +158,4 @@ CMakeFiles/doggy.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc \
- /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/inc/Animals/../Animals/Animal.hpp \
- /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/inc/Animals/Cat.hpp \
- /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/inc/Treatment.hpp
+ /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/Animals/../../inc/Animals/../Animals/Animal.hpp

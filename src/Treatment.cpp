@@ -1,28 +1,28 @@
 #include "Treatment.hpp"
-
+using namespace TreatmentNamespace;
 // Constructor
 Treatment::Treatment(const string &name, double cost)
-    : treatmentName(name), treatmentCost(cost) {}
+    : name(name), cost(cost) {}
 
 // Getters 
-string Treatment::getTreatmentName() const {
-    return treatmentName;
+string Treatment::getName() const {
+    return name;
 }
 
-double Treatment::getTreatmentCost() const {
-    return treatmentCost;
+double Treatment::getCost() const {
+    return cost;
 }
 
 // Setters
-void Treatment::setTreatmentName(const string &name) {
-    treatmentName = name;
+void Treatment::setName(const string &name) {
+    this -> name = name;
 }
 
-void Treatment::setTreatmentCost(double cost) {
-    treatmentCost = cost;
+void Treatment::setCost(double cost) {
+    this -> cost = cost;
 }
 
 // Print details of the treatment
 void Treatment::printDetails() const {
-    cout << "Treatment Name: " << treatmentName << ", Cost: " << treatmentCost << " RON" << endl;
+    cout << "Treatment Name: " << name << ", Cost: " << cost << " RON" << endl;
 }

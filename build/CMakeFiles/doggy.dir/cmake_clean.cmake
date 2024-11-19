@@ -1,6 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/doggy.dir/src/Dog.cpp.o"
-  "CMakeFiles/doggy.dir/src/Dog.cpp.o.d"
+  "CMakeFiles/doggy.dir/src/Animals/Animal.cpp.o"
+  "CMakeFiles/doggy.dir/src/Animals/Animal.cpp.o.d"
+  "CMakeFiles/doggy.dir/src/Animals/Cat.cpp.o"
+  "CMakeFiles/doggy.dir/src/Animals/Cat.cpp.o.d"
+  "CMakeFiles/doggy.dir/src/Animals/Dog.cpp.o"
+  "CMakeFiles/doggy.dir/src/Animals/Dog.cpp.o.d"
   "CMakeFiles/doggy.dir/src/Treatment.cpp.o"
   "CMakeFiles/doggy.dir/src/Treatment.cpp.o.d"
   "CMakeFiles/doggy.dir/src/main.cpp.o"

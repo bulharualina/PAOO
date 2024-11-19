@@ -8,7 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/Dog.cpp" "CMakeFiles/doggy.dir/src/Dog.cpp.o" "gcc" "CMakeFiles/doggy.dir/src/Dog.cpp.o.d"
+  "/home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/Animals/Animal.cpp" "CMakeFiles/doggy.dir/src/Animals/Animal.cpp.o" "gcc" "CMakeFiles/doggy.dir/src/Animals/Animal.cpp.o.d"
+  "/home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/Animals/Cat.cpp" "CMakeFiles/doggy.dir/src/Animals/Cat.cpp.o" "gcc" "CMakeFiles/doggy.dir/src/Animals/Cat.cpp.o.d"
+  "/home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/Animals/Dog.cpp" "CMakeFiles/doggy.dir/src/Animals/Dog.cpp.o" "gcc" "CMakeFiles/doggy.dir/src/Animals/Dog.cpp.o.d"
   "/home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/Treatment.cpp" "CMakeFiles/doggy.dir/src/Treatment.cpp.o" "gcc" "CMakeFiles/doggy.dir/src/Treatment.cpp.o.d"
   "/home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/main.cpp" "CMakeFiles/doggy.dir/src/main.cpp.o" "gcc" "CMakeFiles/doggy.dir/src/main.cpp.o.d"
   )
