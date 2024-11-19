@@ -3,7 +3,7 @@
 
 #include <string>
 #include <vector>
-#include "../Treatment.hpp"
+#include "../Treatment/Treatment.hpp"
 #include "../Animals/Animal.hpp"
 using namespace std;
 using namespace TreatmentNamespace;
@@ -14,10 +14,18 @@ namespace AnimalNamespace {
         vector<Treatment> *treatments;  // Dynamically allocated vector of Treatment objects
 
     public:
-        // Constructor & default constructor 
+        // Default constructor 
         Cat();
+        
+        //Constructor with parameters
         Cat(const string &name, int age, double weight);
-
+        
+        // Copy constructor
+        Cat(const Cat &obj); 
+        
+        // Move constructor          
+        Cat(Cat &&other);      
+        
         // Destructor
         ~Cat();
 

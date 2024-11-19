@@ -1,15 +1,7 @@
-#include "../../inc/Animals/Dog.hpp"
+#include "Dog.hpp"
 #include <iostream>
 using namespace AnimalNamespace;
 using namespace TreatmentNamespace;
-
-// Constructor
-Dog::Dog(const string &name, int age, double weight)
-    : Animal(name,age,weight)
-{
-    this -> treatments = new vector<Treatment>();
-    cout << "\n----- Dog object created: " << name << endl;
-}
 
 // Default constructor 
 Dog::Dog() 
@@ -18,6 +10,27 @@ Dog::Dog()
     this->treatments = new vector<Treatment>();
     cout << "\n----- Dog object created (default constructor)" << endl;
 }
+
+//Constructor with parameters
+Dog::Dog(const string &name, int age, double weight)
+    : Animal(name,age,weight)
+{
+    this -> treatments = new vector<Treatment>();
+    cout << "\n----- Dog object created: " << name << endl;
+}
+
+//Copy constructor
+Dog::Dog(const Dog &obj){
+    name = obj.name;
+    age = obj.age;
+    weight = obj.weight;
+
+    treatments = new vector<Treatment>(*obj.treatments);
+ 
+    cout << "\n----- Dog copy constructor called for: " << obj.name << endl;
+
+}
+
 
 // Destructor
 Dog::~Dog() {
@@ -36,9 +49,12 @@ Dog& Dog::operator=(const Dog &rhs) {
         cout << "\n----- Freeing existing data." << endl;
         delete treatments;
 
-        
         cout << "\n----- Copy the data of " << rhs.name << " to " << name << endl;
+        name = rhs.name;
+        age = rhs.age;
+        weight = rhs.weight;
         treatments = new vector<Treatment>(*rhs.treatments);
+
         cout << "\n----- Assignment completed."<< endl;
         
     }else {
@@ -79,3 +95,4 @@ void Dog::printDetails() const {
         cout << "No treatments assigned" << endl;
     }
 }
+

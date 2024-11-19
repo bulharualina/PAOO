@@ -1,15 +1,7 @@
-#include "../../inc/Animals/Cat.hpp"
+#include "Cat.hpp"
 #include <iostream>
 using namespace AnimalNamespace;
 using namespace TreatmentNamespace;
-
-// Constructor and Initializer List 
-Cat::Cat(const string &name, int age, double weight)
-    : Animal(name,age,weight)
-{
-    this -> treatments = new vector<Treatment>();
-    cout << "\n----- Cat object created: " << name << endl;
-}
 
 // Default constructor 
 Cat::Cat() 
@@ -17,6 +9,37 @@ Cat::Cat()
 {
     this->treatments = new vector<Treatment>();
     cout << "\n----- Cat object created (default constructor)" << endl;
+}
+
+//Constructor with parameters
+Cat::Cat(const string &name, int age, double weight)
+    : Animal(name,age,weight)
+{
+    this -> treatments = new vector<Treatment>();
+    cout << "\n----- Cat object created: " << name << endl;
+}
+
+// Copy constructor
+Cat::Cat(const Cat &obj){
+    name = obj.name;
+    age = obj.age;
+    weight = obj.weight;
+
+    treatments = new vector<Treatment>(*obj.treatments);
+ 
+    cout << "\n----- Cat copy constructor called for: " << obj.name << endl;
+
+}
+
+// Move constructor
+Cat::Cat(Cat &&other)    
+{ 
+    name = move(other.name);
+    age = other.age;
+    weight = other.weight;
+    this->treatments = other.treatments;
+    other.treatments = nullptr; // Nullify the source pointer
+    cout << "\n----- Cat move constructor called for: " << name << endl;
 }
 
 // Destructor
@@ -36,9 +59,12 @@ Cat& Cat::operator=(const Cat &rhs) {
         cout << "\n----- Freeing existing data." << endl;
         delete treatments;
 
-        
         cout << "\n----- Copy the data of " << rhs.name << " to " << name << endl;
+        name = rhs.name;
+        age = rhs.age;
+        weight = rhs.weight;
         treatments = new vector<Treatment>(*rhs.treatments);
+        
         cout << "\n----- Assignment completed."<< endl;
         
     }else {
@@ -79,3 +105,5 @@ void Cat::printDetails() const {
         cout << "No treatments assigned" << endl;
     }
 }
+
+

@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/build/CMakeFiles /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/build/CMakeFiles /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/build/inc//CMakeFiles/progress.marks
+	cd /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 inc/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 inc/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,31 +103,18 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 inc/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 inc/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
-
-#=============================================================================
-# Target rules for targets named doggy
-
-# Build rule for target.
-doggy: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 doggy
-.PHONY : doggy
-
-# fast build rule for target.
-doggy/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/doggy.dir/build.make src/CMakeFiles/doggy.dir/build
-.PHONY : doggy/fast
 
 # Help Target
 help:
@@ -137,7 +124,6 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... doggy"
 .PHONY : help
 
 
@@ -149,6 +135,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

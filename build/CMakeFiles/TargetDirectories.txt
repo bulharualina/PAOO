@@ -1,3 +1,7 @@
-/home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/build/CMakeFiles/doggy.dir
 /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/build/CMakeFiles/edit_cache.dir
 /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/build/CMakeFiles/rebuild_cache.dir
+/home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/build/inc/CMakeFiles/edit_cache.dir
+/home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/build/inc/CMakeFiles/rebuild_cache.dir
+/home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/build/src/CMakeFiles/doggy.dir
+/home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/build/src/CMakeFiles/edit_cache.dir
+/home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/build/src/CMakeFiles/rebuild_cache.dir
