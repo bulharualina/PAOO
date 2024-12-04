@@ -3,6 +3,8 @@
 
 #include <string>
 #include <vector>
+#include <memory>//smart pointers
+#include <mutex>//mutex
 #include "../Treatment/Treatment.hpp"
 #include "../Animals/Animal.hpp"
 using namespace std;
@@ -11,7 +13,8 @@ using namespace TreatmentNamespace;
 namespace AnimalNamespace {
     class Dog : public Animal {
     private:
-        vector<Treatment> *treatments;  // Dynamically allocated vector of Treatment objects
+        vector <shared_ptr<Treatment>> treatments;
+        mutable mutex mtx;  
 
     public:
         // Default constructor 
@@ -23,8 +26,8 @@ namespace AnimalNamespace {
         // Copy constructor
         Dog(const Dog &ob); 
         
-        // Disabling the move constructor
-        Dog(Dog&&) = delete;     
+        // Move constructor
+        Dog(Dog&&) noexcept;     
         
         // Destructor
         ~Dog();
@@ -32,12 +35,15 @@ namespace AnimalNamespace {
         // Assignment operator 
         Dog& operator=(const Dog &rhs);
 
+         // Assignment operator 
+        Dog& operator=(Dog &&other) noexcept;
+
         // Method to add a treatment
         void addTreatment(const Treatment &treatment);
         vector<Treatment> &getTreatments() const;
         
         // Print details
-        void printDetails() const;
+        void printDetails() const override;
     };
 }
 #endif

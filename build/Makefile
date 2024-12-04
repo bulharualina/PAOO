@@ -153,30 +153,6 @@ src/Animals/Animal.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/doggy.dir/build.make CMakeFiles/doggy.dir/src/Animals/Animal.cpp.s
 .PHONY : src/Animals/Animal.cpp.s
 
-src/Animals/Cat.o: src/Animals/Cat.cpp.o
-.PHONY : src/Animals/Cat.o
-
-# target to build an object file
-src/Animals/Cat.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/doggy.dir/build.make CMakeFiles/doggy.dir/src/Animals/Cat.cpp.o
-.PHONY : src/Animals/Cat.cpp.o
-
-src/Animals/Cat.i: src/Animals/Cat.cpp.i
-.PHONY : src/Animals/Cat.i
-
-# target to preprocess a source file
-src/Animals/Cat.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/doggy.dir/build.make CMakeFiles/doggy.dir/src/Animals/Cat.cpp.i
-.PHONY : src/Animals/Cat.cpp.i
-
-src/Animals/Cat.s: src/Animals/Cat.cpp.s
-.PHONY : src/Animals/Cat.s
-
-# target to generate assembly for a file
-src/Animals/Cat.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/doggy.dir/build.make CMakeFiles/doggy.dir/src/Animals/Cat.cpp.s
-.PHONY : src/Animals/Cat.cpp.s
-
 src/Animals/Dog.o: src/Animals/Dog.cpp.o
 .PHONY : src/Animals/Dog.o
 
@@ -261,9 +237,6 @@ help:
 	@echo "... src/Animals/Animal.o"
 	@echo "... src/Animals/Animal.i"
 	@echo "... src/Animals/Animal.s"
-	@echo "... src/Animals/Cat.o"
-	@echo "... src/Animals/Cat.i"
-	@echo "... src/Animals/Cat.s"
 	@echo "... src/Animals/Dog.o"
 	@echo "... src/Animals/Dog.i"
 	@echo "... src/Animals/Dog.s"

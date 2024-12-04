@@ -12,5 +12,5 @@ add_executable(doggy
     src/Treatment/Treatment.cpp
     src/Animals/Animal.cpp
     src/Animals/Dog.cpp
-    src/Animals/Cat.cpp
+  
 )
