@@ -5,8 +5,13 @@ Animal::Animal()
     : name("Unknown"), age(0), weight(0.0) {}
 
 Animal::Animal(const string &name, int age, double weight)
-    : name(name), age(age), weight(weight){}
+    : name(name), age(age), weight(weight){ cout<< "Constructor Animal"<<endl;
+}
 
+
+Animal::~Animal(){
+    cout<< "Destructor Animal"<<endl;
+}
 // Setters
 void Animal::setName(const string &name) { 
     this -> name = name; 

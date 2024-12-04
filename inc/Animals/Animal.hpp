@@ -18,6 +18,7 @@ namespace AnimalNamespace
         // Constructors
         Animal();
         Animal(const string &name, int age, double weight);
+        ~Animal();
   
         // Setters
         void setName(const string &name);
@@ -29,8 +30,7 @@ namespace AnimalNamespace
         int getAge() const;
         double getWeight() const;
     
-        // Print details
-        virtual void printDetails() const = 0;
+        
     };
 }
 #endif

@@ -191,7 +191,7 @@ CMakeFiles/doggy.dir/src/Animals/Animal.cpp.o: /home/alina/Faculta/PAOO/Tema/Tem
 
 CMakeFiles/doggy.dir/src/Animals/Cat.cpp.o: /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/Animals/Cat.cpp \
   /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/inc/Animals/Animal.hpp \
-  /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/inc/Treatment.hpp \
+  /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/inc/Treatment/Treatment.hpp \
   /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/inc/Animals/Cat.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
@@ -386,7 +386,7 @@ CMakeFiles/doggy.dir/src/Animals/Cat.cpp.o: /home/alina/Faculta/PAOO/Tema/Tema_I
 
 CMakeFiles/doggy.dir/src/Animals/Dog.cpp.o: /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/Animals/Dog.cpp \
   /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/inc/Animals/Animal.hpp \
-  /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/inc/Treatment.hpp \
+  /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/inc/Treatment/Treatment.hpp \
   /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/inc/Animals/Dog.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
@@ -579,8 +579,8 @@ CMakeFiles/doggy.dir/src/Animals/Dog.cpp.o: /home/alina/Faculta/PAOO/Tema/Tema_I
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
 
-CMakeFiles/doggy.dir/src/Treatment.cpp.o: /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/Treatment.cpp \
-  /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/inc/Treatment.hpp \
+CMakeFiles/doggy.dir/src/Treatment/Treatment.cpp.o: /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/Treatment/Treatment.cpp \
+  /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/inc/Treatment/Treatment.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -769,10 +769,10 @@ CMakeFiles/doggy.dir/src/Treatment.cpp.o: /home/alina/Faculta/PAOO/Tema/Tema_I/P
 
 CMakeFiles/doggy.dir/src/main.cpp.o: /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/main.cpp \
   /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/inc/Animals/Animal.hpp \
-  /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/inc/Treatment.hpp \
+  /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/inc/Treatment/Treatment.hpp \
   /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/inc/Animals/Cat.hpp \
   /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/inc/Animals/Dog.hpp \
-  /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/inc/Treatment.hpp \
+  /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/inc/Treatment/Treatment.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -977,8 +977,6 @@ CMakeFiles/doggy.dir/src/main.cpp.o: /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/s
 
 /usr/include/c++/13/bits/stl_uninitialized.h:
 
-/home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/inc/Treatment.hpp:
-
 /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/Animals/Cat.cpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
@@ -1033,6 +1031,8 @@ CMakeFiles/doggy.dir/src/main.cpp.o: /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/s
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
+/home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/Treatment/Treatment.cpp:
+
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
@@ -1048,6 +1048,8 @@ CMakeFiles/doggy.dir/src/main.cpp.o: /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/s
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
+
+/home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/inc/Treatment/Treatment.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
@@ -1272,8 +1274,6 @@ CMakeFiles/doggy.dir/src/main.cpp.o: /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/s
 /usr/include/c++/13/string_view:
 
 /usr/include/features-time64.h:
-
-/home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/Treatment.cpp:
 
 /usr/include/c++/13/ext/alloc_traits.h:
 

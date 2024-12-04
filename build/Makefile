@@ -126,8 +126,128 @@ doggy: cmake_check_build_system
 
 # fast build rule for target.
 doggy/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/doggy.dir/build.make src/CMakeFiles/doggy.dir/build
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/doggy.dir/build.make CMakeFiles/doggy.dir/build
 .PHONY : doggy/fast
+
+src/Animals/Animal.o: src/Animals/Animal.cpp.o
+.PHONY : src/Animals/Animal.o
+
+# target to build an object file
+src/Animals/Animal.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/doggy.dir/build.make CMakeFiles/doggy.dir/src/Animals/Animal.cpp.o
+.PHONY : src/Animals/Animal.cpp.o
+
+src/Animals/Animal.i: src/Animals/Animal.cpp.i
+.PHONY : src/Animals/Animal.i
+
+# target to preprocess a source file
+src/Animals/Animal.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/doggy.dir/build.make CMakeFiles/doggy.dir/src/Animals/Animal.cpp.i
+.PHONY : src/Animals/Animal.cpp.i
+
+src/Animals/Animal.s: src/Animals/Animal.cpp.s
+.PHONY : src/Animals/Animal.s
+
+# target to generate assembly for a file
+src/Animals/Animal.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/doggy.dir/build.make CMakeFiles/doggy.dir/src/Animals/Animal.cpp.s
+.PHONY : src/Animals/Animal.cpp.s
+
+src/Animals/Cat.o: src/Animals/Cat.cpp.o
+.PHONY : src/Animals/Cat.o
+
+# target to build an object file
+src/Animals/Cat.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/doggy.dir/build.make CMakeFiles/doggy.dir/src/Animals/Cat.cpp.o
+.PHONY : src/Animals/Cat.cpp.o
+
+src/Animals/Cat.i: src/Animals/Cat.cpp.i
+.PHONY : src/Animals/Cat.i
+
+# target to preprocess a source file
+src/Animals/Cat.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/doggy.dir/build.make CMakeFiles/doggy.dir/src/Animals/Cat.cpp.i
+.PHONY : src/Animals/Cat.cpp.i
+
+src/Animals/Cat.s: src/Animals/Cat.cpp.s
+.PHONY : src/Animals/Cat.s
+
+# target to generate assembly for a file
+src/Animals/Cat.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/doggy.dir/build.make CMakeFiles/doggy.dir/src/Animals/Cat.cpp.s
+.PHONY : src/Animals/Cat.cpp.s
+
+src/Animals/Dog.o: src/Animals/Dog.cpp.o
+.PHONY : src/Animals/Dog.o
+
+# target to build an object file
+src/Animals/Dog.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/doggy.dir/build.make CMakeFiles/doggy.dir/src/Animals/Dog.cpp.o
+.PHONY : src/Animals/Dog.cpp.o
+
+src/Animals/Dog.i: src/Animals/Dog.cpp.i
+.PHONY : src/Animals/Dog.i
+
+# target to preprocess a source file
+src/Animals/Dog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/doggy.dir/build.make CMakeFiles/doggy.dir/src/Animals/Dog.cpp.i
+.PHONY : src/Animals/Dog.cpp.i
+
+src/Animals/Dog.s: src/Animals/Dog.cpp.s
+.PHONY : src/Animals/Dog.s
+
+# target to generate assembly for a file
+src/Animals/Dog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/doggy.dir/build.make CMakeFiles/doggy.dir/src/Animals/Dog.cpp.s
+.PHONY : src/Animals/Dog.cpp.s
+
+src/Treatment/Treatment.o: src/Treatment/Treatment.cpp.o
+.PHONY : src/Treatment/Treatment.o
+
+# target to build an object file
+src/Treatment/Treatment.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/doggy.dir/build.make CMakeFiles/doggy.dir/src/Treatment/Treatment.cpp.o
+.PHONY : src/Treatment/Treatment.cpp.o
+
+src/Treatment/Treatment.i: src/Treatment/Treatment.cpp.i
+.PHONY : src/Treatment/Treatment.i
+
+# target to preprocess a source file
+src/Treatment/Treatment.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/doggy.dir/build.make CMakeFiles/doggy.dir/src/Treatment/Treatment.cpp.i
+.PHONY : src/Treatment/Treatment.cpp.i
+
+src/Treatment/Treatment.s: src/Treatment/Treatment.cpp.s
+.PHONY : src/Treatment/Treatment.s
+
+# target to generate assembly for a file
+src/Treatment/Treatment.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/doggy.dir/build.make CMakeFiles/doggy.dir/src/Treatment/Treatment.cpp.s
+.PHONY : src/Treatment/Treatment.cpp.s
+
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/doggy.dir/build.make CMakeFiles/doggy.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/doggy.dir/build.make CMakeFiles/doggy.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/doggy.dir/build.make CMakeFiles/doggy.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -138,6 +258,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... doggy"
+	@echo "... src/Animals/Animal.o"
+	@echo "... src/Animals/Animal.i"
+	@echo "... src/Animals/Animal.s"
+	@echo "... src/Animals/Cat.o"
+	@echo "... src/Animals/Cat.i"
+	@echo "... src/Animals/Cat.s"
+	@echo "... src/Animals/Dog.o"
+	@echo "... src/Animals/Dog.i"
+	@echo "... src/Animals/Dog.s"
+	@echo "... src/Treatment/Treatment.o"
+	@echo "... src/Treatment/Treatment.i"
+	@echo "... src/Treatment/Treatment.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

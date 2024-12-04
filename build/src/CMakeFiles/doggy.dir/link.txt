@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/doggy.dir/main.cpp.o CMakeFiles/doggy.dir/Treatment/Treatment.cpp.o CMakeFiles/doggy.dir/Animals/Dog.cpp.o CMakeFiles/doggy.dir/Animals/Cat.cpp.o CMakeFiles/doggy.dir/Animals/Animal.cpp.o -o doggy 

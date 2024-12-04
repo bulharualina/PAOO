@@ -1,7 +1,7 @@
-src/CMakeFiles/doggy.dir/Animals/Cat.cpp.o: \
- /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/Animals/Cat.cpp \
+CMakeFiles/doggy.dir/src/Treatment/Treatment.cpp.o: \
+ /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/src/Treatment/Treatment.cpp \
  /usr/include/stdc-predef.h \
- /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/inc/Animals/Cat.hpp \
+ /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/inc/Treatment/Treatment.hpp \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -116,11 +116,6 @@ src/CMakeFiles/doggy.dir/Animals/Cat.cpp.o: \
  /usr/include/c++/13/bits/memory_resource.h /usr/include/c++/13/cstddef \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
- /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_uninitialized.h \
- /usr/include/c++/13/bits/stl_vector.h \
- /usr/include/c++/13/bits/stl_bvector.h \
- /usr/include/c++/13/bits/vector.tcc \
- /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/inc/Animals/../Treatment/Treatment.hpp \
  /usr/include/c++/13/iostream /usr/include/c++/13/ostream \
  /usr/include/c++/13/ios /usr/include/c++/13/exception \
  /usr/include/c++/13/bits/exception_ptr.h \
@@ -157,5 +152,4 @@ src/CMakeFiles/doggy.dir/Animals/Cat.cpp.o: \
  /usr/include/c++/13/bits/locale_facets.tcc \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
- /usr/include/c++/13/bits/istream.tcc \
- /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/inc/Animals/../Animals/Animal.hpp
+ /usr/include/c++/13/bits/istream.tcc

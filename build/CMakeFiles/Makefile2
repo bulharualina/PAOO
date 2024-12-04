@@ -63,75 +63,42 @@ CMAKE_BINARY_DIR = /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: inc/all
-all: src/all
+all: CMakeFiles/doggy.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: inc/preinstall
-preinstall: src/preinstall
+preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: inc/clean
-clean: src/clean
+clean: CMakeFiles/doggy.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory inc
-
-# Recursive "all" directory target.
-inc/all:
-.PHONY : inc/all
-
-# Recursive "preinstall" directory target.
-inc/preinstall:
-.PHONY : inc/preinstall
-
-# Recursive "clean" directory target.
-inc/clean:
-.PHONY : inc/clean
-
-#=============================================================================
-# Directory level rules for directory src
-
-# Recursive "all" directory target.
-src/all: src/CMakeFiles/doggy.dir/all
-.PHONY : src/all
-
-# Recursive "preinstall" directory target.
-src/preinstall:
-.PHONY : src/preinstall
-
-# Recursive "clean" directory target.
-src/clean: src/CMakeFiles/doggy.dir/clean
-.PHONY : src/clean
-
-#=============================================================================
-# Target rules for target src/CMakeFiles/doggy.dir
+# Target rules for target CMakeFiles/doggy.dir
 
 # All Build rule for target.
-src/CMakeFiles/doggy.dir/all:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/doggy.dir/build.make src/CMakeFiles/doggy.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/doggy.dir/build.make src/CMakeFiles/doggy.dir/build
+CMakeFiles/doggy.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/doggy.dir/build.make CMakeFiles/doggy.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/doggy.dir/build.make CMakeFiles/doggy.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target doggy"
-.PHONY : src/CMakeFiles/doggy.dir/all
+.PHONY : CMakeFiles/doggy.dir/all
 
 # Build rule for subdir invocation for target.
-src/CMakeFiles/doggy.dir/rule: cmake_check_build_system
+CMakeFiles/doggy.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/build/CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/doggy.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/doggy.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/alina/Faculta/PAOO/Tema/Tema_I/PAOO/build/CMakeFiles 0
-.PHONY : src/CMakeFiles/doggy.dir/rule
+.PHONY : CMakeFiles/doggy.dir/rule
 
 # Convenience name for target.
-doggy: src/CMakeFiles/doggy.dir/rule
+doggy: CMakeFiles/doggy.dir/rule
 .PHONY : doggy
 
 # clean rule for target.
-src/CMakeFiles/doggy.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/doggy.dir/build.make src/CMakeFiles/doggy.dir/clean
-.PHONY : src/CMakeFiles/doggy.dir/clean
+CMakeFiles/doggy.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/doggy.dir/build.make CMakeFiles/doggy.dir/clean
+.PHONY : CMakeFiles/doggy.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
