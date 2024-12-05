@@ -3,8 +3,8 @@
 
 #include <string>
 #include <vector>
-#include <memory>//smart pointers
-#include <mutex>//mutex
+#include <memory>
+#include <mutex>
 #include "../Treatment/Treatment.hpp"
 #include "../Animals/Animal.hpp"
 using namespace std;
@@ -30,20 +30,24 @@ namespace AnimalNamespace {
         Dog(Dog&&) noexcept;     
         
         // Destructor
-        ~Dog();
+        virtual ~Dog();
 
-        // Assignment operator 
+        // Print details
+        void printDetails() const override;
+
+        // Copy assignment operator override
         Dog& operator=(const Dog &rhs);
 
-         // Assignment operator 
+         // Move sssignment operator override
         Dog& operator=(Dog &&other) noexcept;
 
         // Method to add a treatment
         void addTreatment(const Treatment &treatment);
+        
+        //Getter thread-safe
         vector<Treatment> &getTreatments() const;
         
-        // Print details
-        void printDetails() const override;
+        
     };
 }
 #endif

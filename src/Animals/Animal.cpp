@@ -18,9 +18,9 @@ Animal::Animal(const Animal &obj)
 {
     cout << "\n----- Animal copy constructor called for: " << obj.name << endl;
     
-    // Copy the treatments vector: create a new unique_ptr for each treatment
+    // Create a new unique_ptr for each treatment
     for (const auto &treatment : obj.treatments) {
-        treatments.push_back(make_unique<Treatment>(*treatment)); // Deep copy each treatment
+        treatments.push_back(make_unique<Treatment>(*treatment)); 
     }
 }
 
@@ -30,8 +30,8 @@ Animal::Animal(Animal &&other)
 {
     cout << "\n----- Animal move constructor called for: " << name << endl;
     
-    // Move the treatments vector: transfer ownership
-    treatments = move(other.treatments); // Move the vector of unique_ptrs
+    // Move the treatments vector
+    treatments = move(other.treatments); 
 }
 
 //Destructor
@@ -46,8 +46,11 @@ Animal& Animal::operator=(const Animal &rhs) {
     // Check for self-assignment
     if (this != &rhs) {
         
-        lock_guard<std::mutex> lock(mtx); // Sincronizare
         cout << "\n----- Copy the data of " << rhs.name << " to " << name << endl;
+        
+        // Lock the mutex to ensure thread-safe operations
+        lock_guard<mutex> lock(mtx); 
+        
         name = rhs.name;
         age = rhs.age;
         weight = rhs.weight;
@@ -55,9 +58,9 @@ Animal& Animal::operator=(const Animal &rhs) {
         // Clear the current treatments vector
         treatments.clear(); 
 
-        // Copy the treatments: create a new unique_ptr for each treatment 
+        // Copy each treatment using make_unique
         for (const auto &treatment : rhs.treatments) {
-            treatments.push_back(make_unique<Treatment>(*treatment)); // Copy each treatment using make_unique
+            treatments.push_back(make_unique<Treatment>(*treatment)); 
         }
         cout << "\n----- Assignment completed."<< endl;
         
@@ -71,12 +74,16 @@ Animal& Animal::operator=(const Animal &rhs) {
 Animal& Animal::operator=(Animal&& other) noexcept {
     // Check for self-assignment
     if (this != &other) {
-        std::lock_guard<std::mutex> lock(mtx); // Sincronizare
+        
         cout << "\n----- Move the data of " << other.name << " to " << name << endl;
+        // Lock the mutex to ensure thread-safe operations
+        lock_guard<mutex> lock(mtx); 
+        
         name = move(other.name);
         age = other.age;
         weight = other.weight;
         treatments = move(other.treatments);
+        
         cout << "\n----- Assignment completed."<< endl;
     }else {
         cout << "\n----- Self-assignment detected." << endl;
@@ -86,7 +93,7 @@ Animal& Animal::operator=(Animal&& other) noexcept {
 
 // Method to add a treatment
 void Animal::addTreatment(const Treatment &treatment) {
-    lock_guard<std::mutex> lock(mtx); // Protejăm accesul la resurse
+    lock_guard<mutex> lock(mtx); // Thread-safe operation
     treatments.push_back(make_unique<Treatment>(treatment));
 }
 
@@ -100,9 +107,9 @@ void Animal::printDetails() const {
 
     if (!treatments.empty()) {
         cout << "Treatments: " << endl;
-        // Iterate over the vector and dereference each unique_ptr to access Treatment
+        
         for (const auto &treatment : treatments) {
-            treatment->printDetails();  // Use -> to call methods on the object that unique_ptr points to
+            treatment->printDetails();  
             cout << "----------------\n";
         }
         cout << endl;

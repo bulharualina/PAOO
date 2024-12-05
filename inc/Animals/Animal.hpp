@@ -37,13 +37,13 @@ namespace AnimalNamespace
         //Destructor
         virtual ~Animal();
   
-        // Copy assignment operator 
+        // Copy assignment operator (thread-safe)
         Animal& operator=(const Animal &rhs);
 
-        // Move assignment operator
+        // Move assignment operator (thread-safe)
         Animal& operator=(Animal&& other) noexcept;
     
-        // Method to add a treatment
+        // Method to add a treatment (thread-safe)
         void addTreatment(const Treatment &treatment);
 
         // Print details

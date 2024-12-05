@@ -37,7 +37,6 @@ Dog::Dog(Dog &&other) noexcept
 
 // Destructor
 Dog::~Dog() {
-    // No need to manually delete treatments as unique_ptr will handle it
     cout << "\n----- Destructor for Dog object: " << getName() << endl;
 }
 
@@ -47,7 +46,9 @@ Dog& Dog::operator=(const Dog &rhs) {
 
     // Check for self-assignment
     if (this != &rhs) {
-        cout << "\n----- Freeing existing data." << endl;
+        
+        // Thread-safe
+        lock_guard<mutex> lock(mtx); 
         
         // Call the base class assignment operator
         Animal::operator=(rhs);
@@ -55,7 +56,7 @@ Dog& Dog::operator=(const Dog &rhs) {
         // Clear and copy treatments
         treatments.clear();
         for (const auto &treatment : rhs.treatments) {
-            treatments.push_back(make_unique<Treatment>(*treatment)); // Copy each treatment
+            treatments.push_back(make_shared<Treatment>(*treatment)); // Copy each treatment
         }
 
         cout << "\n----- Assignment completed." << endl;
@@ -70,6 +71,10 @@ Dog& Dog::operator=(Dog &&rhs) noexcept {
     cout << "\n----- Move assignment operator called." << endl;
 
     if (this != &rhs) {
+        
+         // Thread-safe
+        lock_guard<mutex> lock(mtx); 
+
         // Call the base class move assignment operator
         Animal::operator=(move(rhs));
 
@@ -85,7 +90,7 @@ Dog& Dog::operator=(Dog &&rhs) noexcept {
 
 // Method to add a treatment
 void Dog::addTreatment(const Treatment &treatment) {
-    treatments.push_back(make_unique<Treatment>(treatment)); // Use make_unique for memory safety
+    treatments.push_back(make_shared<Treatment>(treatment)); 
 }
 
 // Print details
